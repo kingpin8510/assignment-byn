@@ -1,12 +1,11 @@
-// src/components/ToggleSwitch.js
-import React, { useState, useEffect } from 'react';
-import './ToggleSwitch.css'; // Make sure to import the CSS file
+import React, { useState, useEffect } from "react";
+import "./ToggleSwitch.css";
 
 const ToggleSwitch = ({ isDarkMode, toggleTheme }) => {
   const [isChecked, setIsChecked] = useState(isDarkMode);
 
   useEffect(() => {
-    setIsChecked(!isDarkMode); // Update state when isDarkMode changes
+    setIsChecked(!isDarkMode);
   }, [isDarkMode]);
 
   const handleToggle = () => {

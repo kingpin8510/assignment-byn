@@ -9,7 +9,6 @@ function Login({ setIsAuthenticated }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // This is a static check. In a real application, this should be done securely on the server.
     if (username === "admin" && password === "password") {
       setIsAuthenticated(true)
       navigate("/admin")

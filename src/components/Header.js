@@ -3,47 +3,6 @@ import { Link, useNavigate } from "react-router-dom"
 import { Sun, Moon } from "lucide-react"
 import ToggleSwitch from './ToggleSwitch';
 
-// function Header({ toggleTheme, isDarkMode, isAuthenticated, setIsAuthenticated }) {
-//   const navigate = useNavigate()
-
-//   const handleLogout = () => {
-//     setIsAuthenticated(false)
-//     navigate("/")
-//   }
-
-//   return (
-//     <header className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white p-4">
-//       <div className="container mx-auto flex justify-between items-center">
-//         <Link to="/" className="text-2xl font-bold">
-//           Profile Explorer
-//         </Link>
-//         <nav className="flex items-center">
-//           <Link to="/" className="mr-4">
-//             Home
-//           </Link>
-//           {isAuthenticated ? (
-//             <>
-//               <Link to="/admin" className="mr-4">
-//                 Admin
-//               </Link>
-//               <button onClick={handleLogout} className="mr-4">
-//                 Logout
-//               </button>
-//             </>
-//           ) : (
-//             <Link to="/login" className="mr-4">
-//               Admin
-//             </Link>
-//           )}
-//           <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-//             {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
-//           </button>
-//         </nav>
-//       </div>
-//     </header>
-//   )
-// }
-
 function Header({ toggleTheme, isDarkMode, isAuthenticated, setIsAuthenticated }) {
   const navigate = useNavigate()
 
@@ -76,9 +35,6 @@ function Header({ toggleTheme, isDarkMode, isAuthenticated, setIsAuthenticated }
               Login
             </Link>
           )}
-          {/* <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-            {isDarkMode ? <Sun size={24} className="animate-spin" /> : <Moon size={24} className="animate-spin" />}
-          </button> */}
           <ToggleSwitch isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
         </nav>
       </div>
