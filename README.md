@@ -22,7 +22,7 @@ The **Profile Explorer Web Application** is a feature-rich web app built using R
 ### 4. **Map Services Integration**
 - Integrated with leaflet library for seamless map rendering and marker plotting.
 
-### 6. **Profile Data Management**
+### 5. **Profile Data Management**
 - Admins can:
   - Add new profiles
   - Edit existing profiles
@@ -30,14 +30,14 @@ The **Profile Explorer Web Application** is a feature-rich web app built using R
   - Login via using `admin` as username and `password` as the password.
   - Logout
  
-### 7. **Search and Filter Functionality**
+### 6. **Search and Filter Functionality**
 - Users can search profiles by name or filter by location.
 
-### 8. **Responsive Design**
+### 7. **Responsive Design**
 - Fully responsive for desktops, tablets, and smartphones.
 - **Implementation**: Tailwind CSS media queries and flexible layouts ensure compatibility across devices.
 
-### 11. **Profile Details View**
+### 8. **Profile Details View**
 - Clicking on a profile displays a dedicated details page with:
   - Contact information
   - Interests
