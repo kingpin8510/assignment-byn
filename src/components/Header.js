@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { Sun, Moon } from "lucide-react"
+import ToggleSwitch from './ToggleSwitch';
 
 // function Header({ toggleTheme, isDarkMode, isAuthenticated, setIsAuthenticated }) {
 //   const navigate = useNavigate()
@@ -75,9 +76,10 @@ function Header({ toggleTheme, isDarkMode, isAuthenticated, setIsAuthenticated }
               Login
             </Link>
           )}
-          <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+          {/* <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
             {isDarkMode ? <Sun size={24} className="animate-spin" /> : <Moon size={24} className="animate-spin" />}
-          </button>
+          </button> */}
+          <ToggleSwitch isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
         </nav>
       </div>
     </header>
