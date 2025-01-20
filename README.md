@@ -33,11 +33,14 @@ The **Profile Explorer Web Application** is a feature-rich web app built using R
 ### 6. **Search and Filter Functionality**
 - Users can search profiles by name or filter by location.
 
-### 7. **Responsive Design**
+### 7. **Theme toggle**
+- Users can change the theme accordingly using the button in the nav bar.
+
+### 8. **Responsive Design**
 - Fully responsive for desktops, tablets, and smartphones.
 - **Implementation**: Tailwind CSS media queries and flexible layouts ensure compatibility across devices.
 
-### 8. **Profile Details View**
+### 9. **Profile Details View**
 - Clicking on a profile displays a dedicated details page with:
   - Contact information
   - Interests
